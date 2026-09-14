@@ -9,12 +9,36 @@ public class Main {
         guardian2.name = "Galahad";
         guardian2.defenseRating = 110;
 
-        System.out.println("Guardian 1: " + guardian1.name);
-        System.out.println("Defense Rating: " + guardian1.defenseRating);
+        System.out.println(
+                guardian1.getName() +
+                        " Defense Rating: " +
+                        guardian1.getDefenseRating()
+        );
+
+        System.out.println(
+                " Legendary: " +
+                        guardian1.isLegendary()
+        );
 
         System.out.println();
 
-        System.out.println("Guardian 2: " + guardian2.name);
-        System.out.println("Defense Rating: " + guardian2.defenseRating);
+        System.out.println(
+                guardian2.getName() +
+                        " Defense Rating: " +
+                        guardian2.getDefenseRating()
+        );
+
+        System.out.println(
+                " Legendary " +
+                        guardian2.isLegendary()
+        );
+
+        guardian2.setDefenseRating(-20);
+
+        System.out.println(
+                guardian1.getName() +
+                        " Defense Rating after invalid attempt: " +
+                        guardian1.getDefenseRating()
+        ):
     }
 }
